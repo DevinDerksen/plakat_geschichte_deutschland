@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans&display=swap');
+
+body {
+    background: #fffeb3 url('background.jpg') repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Funnel Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+h1, h3, p {
+    background-color: #FAEBCC;
+    padding: 10px;
+    color: #c75d00;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    border-radius: 15%;
+}
+
+.buttons-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    animation: pulse 1s infinite;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px #c75d00;
+}
+
+.button1 { top: 18%; left: 43%; } /* Hamburg */
+.button2 { top: 31%; left: 77%; } /* Berlin */
+.button3 { top: 33%; left: 41%; } /* Hannover */
+.button4 { top: 42%; left: 12%; } /* Gelsenkirchen */
+.button5 { top: 44%; left: 17%; } /* Dortmund */
+.button6 { top: 47%; left: 10%; } /* Düsseldorf */
+.button7 { top: 60%; left: 30%; } /* Frankfurt a. M. */
+.button8 { top: 77%; left: 34%; } /* Stuttgart */
+.button9 { top: 84%; left: 62%; } /* München */
+
+.tooltip {
+    position: absolute;
+    color: #c75d00;
+    background-color: #FAEBCC;
+    border: 1px solid #c75d00;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: none;
+    transform: translate(-44%, -110%);
+    white-space: nowrap;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
