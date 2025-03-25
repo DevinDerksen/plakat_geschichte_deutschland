@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans&display=swap');
 
 body {
-    background: #fffeb3 url('background.jpg') repeat center center;
+    background: #FAEBCC url('background.jpg') repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
